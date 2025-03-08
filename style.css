@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers {
+    background-color: white;
+    color: rgb(117, 120, 121);
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.container-one__table-btn input{
+    background-image: linear-gradient(to right, rgb(104, 216, 229), rgb(145, 62, 233));
+    border: solid black 1px;
+    width: 80vw;
+    padding: 5px;
+    border-radius: 15px;
+    color: rgb(117, 120, 121);
+}
+.table-input input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid black 1px;
+    width: 80vw;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.table-input input:focus {
+    outline: 0;
+}
+
+.course {
+    background-color: transparent;
+    width: 80vw;
+    border: solid 1px black;
+    color: rgb(117, 120, 121);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.delete {
+    padding: 5px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    margin-left: 10px;
+}
+
+.edit {
+    padding: 5px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+.datacard {
+    background-color: bisque;
+    margin: 10px;
+    padding: 10px;
+}
+
+.addDatas {
+    background-image: linear-gradient(to right, rgb(104, 216, 229), rgb(145, 62, 233));
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    margin: 20px;
+}
+
+.data-card {
+    margin: 30px;
+    padding: 45px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.data-card p {
+    padding-bottom: 10px;
+}
+
+.container-two__table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.containers_1 {
+    background-color: white;
+    color: rgb(117, 120, 121);
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.container_1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+}
+
+.container-one__table-btn_1{
+    background-image: linear-gradient(to right, rgb(104, 216, 229), rgb(145, 62, 233));
+    border: solid black 1px;
+    width: 80vw;
+    padding: 5px;
+    border-radius: 15px;
+    color: rgb(117, 120, 121);
+}
+
+.table-input_1 input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid black 1px;
+    width: 80vw;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.table-input_1 input:focus {
+    outline: 0;
+}
+
+.course_1 {
+    background-color: transparent;
+    width: 80vw;
+    border: solid 1px black;
+    color: rgb(117, 120, 121);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+@media screen and (max-width:600px){
+    .container-two__table {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

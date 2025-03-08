@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+
+    <div>
+        <button onclick="addDatas()" class="addDatas">Add Data</button>
+    </div>
+    
+        <div class="containers">
+            <div class="container">
+                 <div class="container-one">
+                    <h1>Student Form</h1>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td class="table-input"><input placeholder="Name" type="text" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td class="table-input"><input placeholder="Age" type="text" id="age" required></td>
+                            </tr>
+                            <tr>
+                                <div>
+                                    <td><input type="radio" value="Male" class="male" name="gender" > Male <input type="radio" value="Female" class="Female" name="gender"> Female </td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td class="table-input">
+                                    <select class="course">
+                                        <option  value="JavaScript">JavaScript</option>
+                                        <option value="Python">Python</option>
+                                        <option value="JAVA">JAVA</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td class="table-input"><input required placeholder="Email" type="text" id="email" ></td>
+                            </tr>
+                            <tr>
+                                <!-- <td><button class="container-one__table-btn" type="button" onclick="add()">Submit</button></td> -->
+
+                                <td class="container-one__table-btn"><input  type="submit" onclick="add()"></td>
+                                 
+                            </tr>
+                        </table>
+                    </form>
+                </div> 
+    
+    
+                
+    
+            </div>
+        </div>
+
+        <!--Edit Data-->
+
+        <div class="containers_1">
+            <div class="container_1">
+                 <div class="container-one_1">
+                    <h1>Student Form</h1>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td><input type="text" hidden class="id_1"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-input_1"><input placeholder="Name" type="text" id="name_1" required></td>
+                            </tr>
+                            <tr>
+                                <td class="table-input_1 u_age" ><input placeholder="Age" type="text" id="age_1" required></td>
+                            </tr>
+                            <tr>
+                                <div>
+                                    <td><input type="radio" value="Male" class="male" name="gender_1" > Male <input type="radio" value="Female" class="Female" name="gender_1"> Female</td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td class="table-input_1">
+                                    <select class="course_1">
+                                        <option  value="JavaScript">JavaScript</option>
+                                        <option value="Python">Python</option>
+                                        <option value="JAVA">JAVA</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td class="table-input_1"><input placeholder="Email" type="text" id="email_1" required></td>
+                            </tr>
+                            <tr>
+                                <td><button class="container-one__table-btn_1" type="button" onclick="update()">Update</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div> 
+    
+    
+                
+    
+            </div>
+        </div>
+
+    <div class="container-two ">
+        <div class="container-two__table ">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
